@@ -49,15 +49,6 @@ svn co https://github.com/hubutui/p7zip-lede/trunk package/p7zip
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/openwrt-openclash
 pushd package/openwrt-openclash/tools/po2lmo && make && sudo make install 2>/dev/null && popd
 
-# theme
-svn co https://github.com/openwrt/luci/tree/master/themes/trunk package/luci-theme-openwrt
-svn co https://github.com/openwrt/luci/tree/master/themes/trunk package/luci-theme-openwrt-2020
-svn co https://github.com/kenzok8/openwrt-packages/trunk package/luci-theme-atmaterial_new
-svn co https://github.com/kenzok8/openwrt-packages/trunk package/luci-theme-edge
-svn co https://github.com/kenzok8/openwrt-packages/trunk package/luci-theme-ifit
-svn co https://github.com/kenzok8/openwrt-packages/trunk package/luci-theme-mcat
-svn co https://github.com/kenzok8/openwrt-packages/trunk package/luci-theme-tomato
-
 # Add third-party software packages (The entire repository)
 # git clone https://github.com/libremesh/lime-packages.git package/lime-packages
 # Add third-party software packages (Specify the package)
